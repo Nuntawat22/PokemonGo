@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PokemonGo.Pokemons.Charmander">
+    <Position X="5.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pokemons\Charmander.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PokemonGo.Pokemons.Charmeleon">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pokemons\Charmeleon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PokemonGo.Pokemons.Pokemon">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAACACBAAAAABQIAEQACAIAAEAkAAAAA=</HashCode>
+      <FileName>Pokemons\Pokemon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PokemonGo.Form1">
+    <Position X="5" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAASAEABAAAACAAAACIByAAEAAAGACAAJAQEA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PokemonGo.Pokemons.Charizard">
+    <Position X="10.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pokemons\Charizard .cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
