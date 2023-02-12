@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tbName = new System.Windows.Forms.TextBox();
@@ -37,7 +36,6 @@
             this.add2 = new System.Windows.Forms.Button();
             this.add3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.add4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,16 +43,9 @@
             this.tbHp2 = new System.Windows.Forms.TextBox();
             this.tbName2 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Hp2 = new System.Windows.Forms.Button();
             this.At1 = new System.Windows.Forms.Button();
-            this.Df2 = new System.Windows.Forms.Button();
-            this.Hp4 = new System.Windows.Forms.Button();
-            this.At2 = new System.Windows.Forms.Button();
-            this.Hp3 = new System.Windows.Forms.Button();
             this.Df1 = new System.Windows.Forms.Button();
             this.Hp1 = new System.Windows.Forms.Button();
-            this.At3 = new System.Windows.Forms.Button();
-            this.At4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -63,7 +54,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(67, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(195, 164);
@@ -101,7 +91,7 @@
             this.add1.Name = "add1";
             this.add1.Size = new System.Drawing.Size(109, 23);
             this.add1.TabIndex = 4;
-            this.add1.Text = "Add Pokemon";
+            this.add1.Text = "Charmander";
             this.add1.UseVisualStyleBackColor = true;
             this.add1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -111,7 +101,7 @@
             this.add2.Name = "add2";
             this.add2.Size = new System.Drawing.Size(109, 23);
             this.add2.TabIndex = 5;
-            this.add2.Text = "Add Pokemon";
+            this.add2.Text = "Charmelon";
             this.add2.UseVisualStyleBackColor = true;
             this.add2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -121,30 +111,21 @@
             this.add3.Name = "add3";
             this.add3.Size = new System.Drawing.Size(109, 23);
             this.add3.TabIndex = 6;
-            this.add3.Text = "Add Pokemon";
+            this.add3.Text = "Pichu";
             this.add3.UseVisualStyleBackColor = true;
+            this.add3.Click += new System.EventHandler(this.add3_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.add4);
             this.groupBox1.Controls.Add(this.add1);
             this.groupBox1.Controls.Add(this.add3);
             this.groupBox1.Controls.Add(this.add2);
             this.groupBox1.Location = new System.Drawing.Point(77, 247);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(185, 160);
+            this.groupBox1.Size = new System.Drawing.Size(185, 138);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "My pokemon";
-            // 
-            // add4
-            // 
-            this.add4.Location = new System.Drawing.Point(38, 117);
-            this.add4.Name = "add4";
-            this.add4.Size = new System.Drawing.Size(109, 23);
-            this.add4.TabIndex = 7;
-            this.add4.Text = "Add Pokemon";
-            this.add4.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -198,31 +179,15 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.Hp2);
             this.groupBox2.Controls.Add(this.At1);
-            this.groupBox2.Controls.Add(this.Df2);
-            this.groupBox2.Controls.Add(this.Hp4);
-            this.groupBox2.Controls.Add(this.At2);
-            this.groupBox2.Controls.Add(this.Hp3);
             this.groupBox2.Controls.Add(this.Df1);
             this.groupBox2.Controls.Add(this.Hp1);
-            this.groupBox2.Controls.Add(this.At3);
-            this.groupBox2.Controls.Add(this.At4);
-            this.groupBox2.Location = new System.Drawing.Point(334, 247);
+            this.groupBox2.Location = new System.Drawing.Point(487, 257);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(369, 192);
+            this.groupBox2.Size = new System.Drawing.Size(198, 128);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "command";
-            // 
-            // Hp2
-            // 
-            this.Hp2.Location = new System.Drawing.Point(194, 98);
-            this.Hp2.Name = "Hp2";
-            this.Hp2.Size = new System.Drawing.Size(109, 23);
-            this.Hp2.TabIndex = 15;
-            this.Hp2.Text = "HP + 50";
-            this.Hp2.UseVisualStyleBackColor = true;
             // 
             // At1
             // 
@@ -234,83 +199,31 @@
             this.At1.UseVisualStyleBackColor = true;
             this.At1.Click += new System.EventHandler(this.button6_Click);
             // 
-            // Df2
-            // 
-            this.Df2.Location = new System.Drawing.Point(194, 161);
-            this.Df2.Name = "Df2";
-            this.Df2.Size = new System.Drawing.Size(109, 23);
-            this.Df2.TabIndex = 18;
-            this.Df2.Text = "Defense +50";
-            this.Df2.UseVisualStyleBackColor = true;
-            // 
-            // Hp4
-            // 
-            this.Hp4.Location = new System.Drawing.Point(194, 127);
-            this.Hp4.Name = "Hp4";
-            this.Hp4.Size = new System.Drawing.Size(109, 23);
-            this.Hp4.TabIndex = 16;
-            this.Hp4.Text = "HP + 50";
-            this.Hp4.UseVisualStyleBackColor = true;
-            // 
-            // At2
-            // 
-            this.At2.Location = new System.Drawing.Point(194, 30);
-            this.At2.Name = "At2";
-            this.At2.Size = new System.Drawing.Size(109, 23);
-            this.At2.TabIndex = 12;
-            this.At2.Text = "Atack";
-            this.At2.UseVisualStyleBackColor = true;
-            // 
-            // Hp3
-            // 
-            this.Hp3.Location = new System.Drawing.Point(38, 127);
-            this.Hp3.Name = "Hp3";
-            this.Hp3.Size = new System.Drawing.Size(109, 23);
-            this.Hp3.TabIndex = 17;
-            this.Hp3.Text = "HP + 50";
-            this.Hp3.UseVisualStyleBackColor = true;
-            // 
             // Df1
             // 
-            this.Df1.Location = new System.Drawing.Point(38, 161);
+            this.Df1.Location = new System.Drawing.Point(38, 88);
             this.Df1.Name = "Df1";
             this.Df1.Size = new System.Drawing.Size(109, 23);
             this.Df1.TabIndex = 6;
             this.Df1.Text = "Defense + 50";
             this.Df1.UseVisualStyleBackColor = true;
+            this.Df1.Click += new System.EventHandler(this.Df1_Click);
             // 
             // Hp1
             // 
-            this.Hp1.Location = new System.Drawing.Point(38, 98);
+            this.Hp1.Location = new System.Drawing.Point(38, 59);
             this.Hp1.Name = "Hp1";
             this.Hp1.Size = new System.Drawing.Size(109, 23);
             this.Hp1.TabIndex = 5;
             this.Hp1.Text = "HP + 50";
             this.Hp1.UseVisualStyleBackColor = true;
-            // 
-            // At3
-            // 
-            this.At3.Location = new System.Drawing.Point(38, 59);
-            this.At3.Name = "At3";
-            this.At3.Size = new System.Drawing.Size(109, 23);
-            this.At3.TabIndex = 14;
-            this.At3.Text = "Atack";
-            this.At3.UseVisualStyleBackColor = true;
-            // 
-            // At4
-            // 
-            this.At4.Location = new System.Drawing.Point(194, 59);
-            this.At4.Name = "At4";
-            this.At4.Size = new System.Drawing.Size(109, 23);
-            this.At4.TabIndex = 13;
-            this.At4.Text = "Atack";
-            this.At4.UseVisualStyleBackColor = true;
+            this.Hp1.Click += new System.EventHandler(this.Hp1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 438);
+            this.ClientSize = new System.Drawing.Size(817, 461);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -354,13 +267,5 @@
         private Button At1;
         private Button Df1;
         private Button Hp1;
-        private Button Hp2;
-        private Button Df2;
-        private Button Hp4;
-        private Button At2;
-        private Button Hp3;
-        private Button At3;
-        private Button At4;
-        private Button add4;
     }
 }

@@ -15,7 +15,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PokemonGo.Pokemons.Pokemon">
-    <Position X="8" Y="0.5" Width="1.5" />
+    <Position X="8.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAACACBAAAAABQIAEQACAIAAEAkAAAAA=</HashCode>
       <FileName>Pokemons\Pokemon.cs</FileName>
@@ -27,15 +27,28 @@
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>EAAAAAAAASAEABAAAACAAAACIByAAEAAAGACAAJAQEA=</HashCode>
+      <HashCode>EAAAAAAAASAUABAAAACAAAACABzAAEAAAGACAAJAQGA=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PokemonGo.Pokemons.Charizard">
-    <Position X="10.25" Y="5.25" Width="1.5" />
+    <Position X="10" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pokemons\Charizard .cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PokemonGo.Pokemons.Pichu">
+    <Position X="12" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pokemons\Pichu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PokemonGo.Properties.Resources">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEEAAAwAAAAAAAACQAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
