@@ -32,9 +32,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tbName = new System.Windows.Forms.TextBox();
             this.tbHp = new System.Windows.Forms.TextBox();
-            this.add1 = new System.Windows.Forms.Button();
-            this.add2 = new System.Windows.Forms.Button();
-            this.add3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,14 +42,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tbHp2 = new System.Windows.Forms.TextBox();
             this.tbName2 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.At1 = new System.Windows.Forms.Button();
-            this.Df1 = new System.Windows.Forms.Button();
-            this.Hp1 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -85,44 +88,44 @@
             this.tbHp.Size = new System.Drawing.Size(100, 23);
             this.tbHp.TabIndex = 3;
             // 
-            // add1
+            // button1
             // 
-            this.add1.Location = new System.Drawing.Point(38, 30);
-            this.add1.Name = "add1";
-            this.add1.Size = new System.Drawing.Size(109, 23);
-            this.add1.TabIndex = 4;
-            this.add1.Text = "Charmander";
-            this.add1.UseVisualStyleBackColor = true;
-            this.add1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Location = new System.Drawing.Point(38, 30);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Charmander";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // add2
+            // button2
             // 
-            this.add2.Location = new System.Drawing.Point(38, 59);
-            this.add2.Name = "add2";
-            this.add2.Size = new System.Drawing.Size(109, 23);
-            this.add2.TabIndex = 5;
-            this.add2.Text = "Charmelon";
-            this.add2.UseVisualStyleBackColor = true;
-            this.add2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Location = new System.Drawing.Point(38, 59);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Charmelon";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // add3
+            // button3
             // 
-            this.add3.Location = new System.Drawing.Point(38, 88);
-            this.add3.Name = "add3";
-            this.add3.Size = new System.Drawing.Size(109, 23);
-            this.add3.TabIndex = 6;
-            this.add3.Text = "Pichu";
-            this.add3.UseVisualStyleBackColor = true;
-            this.add3.Click += new System.EventHandler(this.add3_Click);
+            this.button3.Location = new System.Drawing.Point(38, 88);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(109, 23);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Pichu";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.add1);
-            this.groupBox1.Controls.Add(this.add3);
-            this.groupBox1.Controls.Add(this.add2);
-            this.groupBox1.Location = new System.Drawing.Point(77, 247);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Location = new System.Drawing.Point(77, 258);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(185, 138);
+            this.groupBox1.Size = new System.Drawing.Size(185, 149);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "My pokemon";
@@ -177,21 +180,9 @@
             this.tbName2.Size = new System.Drawing.Size(100, 23);
             this.tbName2.TabIndex = 11;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.At1);
-            this.groupBox2.Controls.Add(this.Df1);
-            this.groupBox2.Controls.Add(this.Hp1);
-            this.groupBox2.Location = new System.Drawing.Point(487, 257);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(198, 128);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "command";
-            // 
             // At1
             // 
-            this.At1.Location = new System.Drawing.Point(38, 30);
+            this.At1.Location = new System.Drawing.Point(34, 22);
             this.At1.Name = "At1";
             this.At1.Size = new System.Drawing.Size(109, 23);
             this.At1.TabIndex = 4;
@@ -199,32 +190,77 @@
             this.At1.UseVisualStyleBackColor = true;
             this.At1.Click += new System.EventHandler(this.button6_Click);
             // 
-            // Df1
+            // groupBox3
             // 
-            this.Df1.Location = new System.Drawing.Point(38, 88);
-            this.Df1.Name = "Df1";
-            this.Df1.Size = new System.Drawing.Size(109, 23);
-            this.Df1.TabIndex = 6;
-            this.Df1.Text = "Defense + 50";
-            this.Df1.UseVisualStyleBackColor = true;
-            this.Df1.Click += new System.EventHandler(this.Df1_Click);
+            this.groupBox3.Controls.Add(this.button11);
+            this.groupBox3.Controls.Add(this.At1);
+            this.groupBox3.Controls.Add(this.button10);
+            this.groupBox3.Controls.Add(this.button7);
+            this.groupBox3.Controls.Add(this.button9);
+            this.groupBox3.Controls.Add(this.button8);
+            this.groupBox3.Location = new System.Drawing.Point(493, 258);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(192, 211);
+            this.groupBox3.TabIndex = 10;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Command";
             // 
-            // Hp1
+            // button11
             // 
-            this.Hp1.Location = new System.Drawing.Point(38, 59);
-            this.Hp1.Name = "Hp1";
-            this.Hp1.Size = new System.Drawing.Size(109, 23);
-            this.Hp1.TabIndex = 5;
-            this.Hp1.Text = "HP + 50";
-            this.Hp1.UseVisualStyleBackColor = true;
-            this.Hp1.Click += new System.EventHandler(this.Hp1_Click);
+            this.button11.Location = new System.Drawing.Point(34, 173);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(109, 23);
+            this.button11.TabIndex = 8;
+            this.button11.Text = "Monter Attack";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(34, 144);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(109, 23);
+            this.button10.TabIndex = 7;
+            this.button10.Text = "Defense monter + 50";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(34, 51);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(127, 23);
+            this.button7.TabIndex = 4;
+            this.button7.Text = "HP Pokemon + 50";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.botton7_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(34, 115);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(109, 23);
+            this.button9.TabIndex = 6;
+            this.button9.Text = "HP monter + 50";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(34, 80);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(138, 29);
+            this.button8.TabIndex = 5;
+            this.button8.Text = "Defense Pokemon + 50 ";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 461);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(881, 511);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbHp2);
@@ -241,7 +277,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,9 +289,9 @@
         private PictureBox pictureBox2;
         private TextBox tbName;
         private TextBox tbHp;
-        private Button add1;
-        private Button add2;
-        private Button add3;
+        private Button button1;
+        private Button button2;
+        private Button button3;
         private GroupBox groupBox1;
         private Label label1;
         private Label label2;
@@ -263,9 +299,12 @@
         private Label label4;
         private TextBox tbHp2;
         private TextBox tbName2;
-        private GroupBox groupBox2;
         private Button At1;
-        private Button Df1;
-        private Button Hp1;
+        private GroupBox groupBox3;
+        private Button button10;
+        private Button button7;
+        private Button button9;
+        private Button button8;
+        private Button button11;
     }
 }

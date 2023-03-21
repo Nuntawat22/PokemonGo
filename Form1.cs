@@ -20,7 +20,7 @@ namespace PokemonGo
             this.tbName2.Text = this.monster.getName();
             this.tbHp2.Text = this.monster.getHP().ToString();
         }
-
+        // Charmander
         private void button1_Click(object sender, EventArgs e)
         {
             selectedPokemon = pokemons[0];
@@ -28,7 +28,7 @@ namespace PokemonGo
             this.tbName.Text = selectedPokemon.getName();
             this.tbHp.Text = selectedPokemon.getHP().ToString();
         }
-
+        // Charmelon
         private void button2_Click(object sender, EventArgs e)
         {
             selectedPokemon = pokemons[1];
@@ -36,7 +36,16 @@ namespace PokemonGo
             this.tbName.Text = selectedPokemon.getName();
             this.tbHp.Text = selectedPokemon.getHP().ToString();
         }
-
+        // Pichu
+        private void button3_Click(object sender, EventArgs e)
+        {
+            selectedPokemon = pokemons[2];
+            this.pictureBox1.Image = selectedPokemon.getImage();
+            this.tbName.Text = selectedPokemon.getName();
+            this.tbHp.Text = selectedPokemon.getHP().ToString();
+        }
+        
+        // Pokemon Attack
         private void button6_Click(object sender, EventArgs e)
         {
             int atk = Math.Abs(this.monster.getDefense() - this.selectedPokemon.getAttack());
@@ -44,27 +53,57 @@ namespace PokemonGo
             this.tbHp2.Text = monster.getHP().ToString();
             if (monster.getHP() <= 0)
             {
-                MessageBox.Show("YOU WIN");
+                MessageBox.Show("You Win");
                 Application.Exit();
             }
         }
-
-        private void add3_Click(object sender, EventArgs e)
+        
+        // Hp Pokemon + 50 
+        private void botton7_Click(object sender, EventArgs e)
         {
-            selectedPokemon = pokemons[2];
-            this.pictureBox1.Image = selectedPokemon.getImage();
-            this.tbName.Text = selectedPokemon.getName();
-            this.tbHp.Text = selectedPokemon.getHP().ToString();
+            this.tbHp.Text = this.selectedPokemon.getHealth().ToString();
+            button7.Enabled = false;
         }
 
-        private void Hp1_Click(object sender, EventArgs e)
+        // Defense Pokemon + 50 
+        private void button8_Click(object sender, EventArgs e)
         {
-            
+            this.selectedPokemon.getDef();
+            button8.Enabled = false;
         }
 
-        private void Df1_Click(object sender, EventArgs e)
+        // Hp monter + 50
+        private void button9_Click(object sender, EventArgs e)
         {
-            
+            this.tbHp2.Text = this.monster.getHealth().ToString();
+            button9.Enabled = false;
+        }
+
+        // Defense monter + 50 
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.monster.getDef();
+            button10.Enabled = false;
+        }
+
+        // Monter Attack 
+        private void button11_Click(object sender, EventArgs e)
+        {
+            int atk = Math.Abs(this.selectedPokemon.getDefense() - this.monster.getAttack());
+            this.selectedPokemon.takeDamage(atk);
+            this.tbHp2.Text = monster.getHP().ToString();
+            if (pokemons[0].getHP() <= 0)
+            {
+                button1.Enabled = false;
+            }
+            else if (pokemons[1].getHP() <= 0)
+            {
+                button2.Enabled = false;
+            }
+            else if (pokemons[2].getHP() <= 0)
+            {
+                button3.Enabled = false; 
+            }
         }
     }
 }
