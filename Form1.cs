@@ -7,6 +7,7 @@ namespace PokemonGo
         List<Pokemon> pokemons;
         Pokemon selectedPokemon;
         Pokemon monster;
+
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +21,8 @@ namespace PokemonGo
             this.tbName2.Text = this.monster.getName();
             this.tbHp2.Text = this.monster.getHP().ToString();
         }
-        // Charmander
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             selectedPokemon = pokemons[0];
@@ -28,7 +30,8 @@ namespace PokemonGo
             this.tbName.Text = selectedPokemon.getName();
             this.tbHp.Text = selectedPokemon.getHP().ToString();
         }
-        // Charmelon
+
+
         private void button2_Click(object sender, EventArgs e)
         {
             selectedPokemon = pokemons[1];
@@ -36,7 +39,7 @@ namespace PokemonGo
             this.tbName.Text = selectedPokemon.getName();
             this.tbHp.Text = selectedPokemon.getHP().ToString();
         }
-        // Pichu
+
         private void button3_Click(object sender, EventArgs e)
         {
             selectedPokemon = pokemons[2];
@@ -45,7 +48,6 @@ namespace PokemonGo
             this.tbHp.Text = selectedPokemon.getHP().ToString();
         }
         
-        // Pokemon Attack
         private void button6_Click(object sender, EventArgs e)
         {
             int atk = Math.Abs(this.monster.getDefense() - this.selectedPokemon.getAttack());
@@ -58,35 +60,30 @@ namespace PokemonGo
             }
         }
         
-        // Hp Pokemon + 50 
         private void botton7_Click(object sender, EventArgs e)
         {
             this.tbHp.Text = this.selectedPokemon.getHealth().ToString();
             button7.Enabled = false;
         }
 
-        // Defense Pokemon + 50 
         private void button8_Click(object sender, EventArgs e)
         {
             this.selectedPokemon.getDef();
             button8.Enabled = false;
         }
 
-        // Hp monter + 50
         private void button9_Click(object sender, EventArgs e)
         {
             this.tbHp2.Text = this.monster.getHealth().ToString();
             button9.Enabled = false;
         }
 
-        // Defense monter + 50 
         private void button10_Click(object sender, EventArgs e)
         {
             this.monster.getDef();
             button10.Enabled = false;
         }
 
-        // Monter Attack 
         private void button11_Click(object sender, EventArgs e)
         {
             int atk = Math.Abs(this.selectedPokemon.getDefense() - this.monster.getAttack());
